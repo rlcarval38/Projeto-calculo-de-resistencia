@@ -16,17 +16,25 @@
         <section>
             <div class="texto" id="textocent">
                 <p>Digite o valor da Resistência <br>&#x1F449<strong id="nominal">Nominal</strong>&#x1F448 </p>
-                <input type="text">
-                
-                
+
+                <input type="number" name="nominal" id="numnominal" >
+
             </div>
+
             <div class="texto" id="texto1">
                 <p>Digite o valor  da Resistência <br>&#x1F449 <strong id="real">Real</strong>&#x1F448</p>
-                <input type="text">
+
+                <input type="number" name="real" id="numreal">
             </div>
+
             <div class="texto" id="calcular">
-                <input type="button"  value="Calcular" id="botao">
-                <input type="button" value="reset" id="reset">
+                <input type="button"  value="Calcular" id="botao" onclick="clicar()">
+
+                <input type="button" value="reset" id="reset" onclick="reset()">
+            </div>
+
+            <div id="res">
+                aqui vai a resposta
             </div>
         </section>
     </main>
@@ -35,5 +43,6 @@
             Desenvolvido Por: <br><a href="https://github.com/rlcarval38" target="_blank"><strong>Roberto de Carvalho</strong></a>
         </p>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>
