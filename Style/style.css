@@ -34,7 +34,7 @@ header p{
 }
 section{
     max-width: 350px;
-    max-height: 380px;
+    max-height: 400px;
     margin:auto;
     background-image: url(../image/fundoazul.png);
     padding: 10px;
@@ -87,12 +87,33 @@ div > p{
     border-radius: 8px;
     border: 3px solid #FF6F0A;
 }*/
+/*#res{
+    display: none;
+}*/
+#res{
+    background-color: black;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+#res > p{
+    text-align: center;
+    margin-top: 3px ;
+    font-family: "Passion One";
+    color: #FF6F0A;
+    font-size: 2em;
+}
+
 
 footer{
     background-color: black;
     text-align: center;
     color: #FF6F0A;
-    padding: 50px;
+    padding: 20px;
+    
 }
 footer a{
     color: white;
