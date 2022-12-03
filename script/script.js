@@ -12,16 +12,18 @@ function clicar(){
     }else if (n1real.value < n1nominal.value){
         cento = (((n1nominal.value/n1real.value)-1)*100)
 
-        res1.innerHTML = `valores Digitados: Nominal: ${n1nominal.value}Ω Real ${n1real.value}Ω Resultado: ${cento.toFixed(2)} % Negativo`
+        res1.innerHTML = `VALORES DIGITADOS: <br> NOMINAL: ${n1nominal.value} Ω<br> REAL ${n1real.value} Ω <br>RESULTADO: ${cento.toFixed(2)} % NEGATIVO`
     }else{
         cento = (((n1real.value/n1nominal.value)-1)*100)
         
-        res1.innerHTML = `valores Digitados: Nominal: ${n1nominal.value}Ω  Real ${n1real.value}Ω Resultado: ${cento.toFixed(2)} % Positivo`
+        res1.innerHTML = `VALORES DIGITADOS: <br> NOMINAL: ${n1nominal.value} Ω<br>REAL: ${n1real.value} Ω<br> RESULTADO: ${cento.toFixed(2)} % Positivo`
     }
         n1real.value = ``
         n1nominal.value = ``
         n1nominal.focus() 
 }   
+
+
         
         
     
