@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 :root{
     /*Cores Principais*/
      --cor00: black ;
      --cor01: white;
-     --cor02: #0072BA;
-     --cor03: rgb(250, 3, 168);
+     --cor02: #fc5f04;
 
      /*Fontes*/
      --font_principal: 'Arial','Franklin Gothic Medium' 'sans-serif';
@@ -28,7 +28,7 @@
         background-repeat: no-repeat;
     }
 
-
+@media screen and (max-width:768px){
     
     .header_principal{
         width: 100vw;
@@ -46,10 +46,11 @@
     }
     .header_text>h1{
         position: relative;
-        top: 30px;
-        font-size: 5em;
+        top: 50px;
+        font-size: 3em;
         font-family: var(--font_header);
-        color: var(--cor03);
+
+        color: var(--cor02);
        
     }
     .section{
@@ -59,11 +60,11 @@
         height: 65vh;
         margin: auto;
         border: 2px solid var(--cor02);
-        background-image: url(../image/background_center.png);
+        background-color: white;
         background-size: cover;
         background-position:top center ;
         border-radius: 8px;
-        box-shadow: 0px 0px 6px 10px #dc00e477;
+        box-shadow: 0px 0px 6px 10px #0073ba77;
         text-align: center;
         
     }
@@ -73,25 +74,24 @@
     }
     .section_text-nominal>p{
         font-family: var(--font_text);
-        color: var(--cor03);
-        font-size: 1.2em;
+        color: var(--cor02);
     }
     .section_text-nominal>p>input[type=number]{
-        width: 200px; 
+        width: 150px; 
         font-family: var(--font_header);
         font-size: 1.1em;
         border-radius: 4px; 
     } 
     .section_text-real{
         padding: 30px;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }   
     .section_text-real>p{
         font-family: var(--font_text);
-        color: var(--cor03);
+        color: var(--cor02);
     }
     .section_text-real>p>input[type=number]{
-        width: 200px; 
+        width: 150px; 
         font-family: var(--font_header);
         font-size: 1.1em;
         border-radius: 4px; 
@@ -106,11 +106,11 @@
     }  
     #calcular>input[type=button]:hover{
         color: var(--cor01);
-        background-color: var(--cor03);
+        background-color: var(--cor02);
     }
     .section_resposta{
         font-family: var(--font_header);
-        color: var(--cor03);
+        color: var(--cor02);
         margin-top: 10px ;
     }
     footer{
@@ -118,16 +118,8 @@
         margin-top:10px ;
     }   
 
+    }
     
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,32 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Resistência</title>
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/telapequena.css" media="screen">
 </head>
 <body>
     <main>
-        <header>
-            <h1>Cálculo de Resistência</h1>
-            <p>Projeto para aprendizado </p>
+        <header class="header_principal">
+           <!-- <div class="header_img">
+                <img class="header_img-logo"  src="image/logo_tecumseh.png" alt="logo_tecumseh">
+            </div>-->
+            <div class="header_text">
+                <h1>Cálculo de Resistência</h1>
+            </div>
         </header>
-        <section>
-            <div class="texto" id="textocent">
-                <p>Digite o valor da Resistência <br>&#x1F449<strong id="nominal">Nominal</strong>&#x1F448 </p>
+        <section class="section">
+            <div class="section_text-nominal">
+                <p>Digite o valor da Resistência</p>
+                <p><strong>Nominal</strong></p>
 
-                <input placeholder="Digite um valor..."  type="number" name="nominal" id="numnominal" >
+                <p>
+                    &#x1F449
+                    <input placeholder=" Digite um valor..."  type="number" name="nominal" id="numnominal" >
+                    &#x1F448
+                </p>
 
             </div>
 
-            <div class="texto" id="texto1">
-                <p>Digite o valor  da Resistência <br>&#x1F449 <strong id="real">Real</strong>&#x1F448</p>          
-                <input placeholder="Digite um valor..." type="number" name="real" id="numreal">
+            <div class="section_text-real">
+                <p>Digite o valor  da Resistência</p>
+                <p><strong>Real</strong></p>
+
+                <p>
+                    &#x1F449
+                    <input placeholder=" Digite um valor..." type="number" name="real" id="numreal">
+                    &#x1F448
+                </p>
+
             </div>
 
-            <div class="texto" id="calcular">
+            <div id="calcular">
                 <input type="button"  value="Calcular" id="botao" onclick="clicar()">
 
             </div>
 
-            <div id="res">
+            <div class="section_resposta" id="res">
                 <p>Aguardando Resultado...</p>
             </div>
         </section>
