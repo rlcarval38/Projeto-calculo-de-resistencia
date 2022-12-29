@@ -21,6 +21,7 @@
         margin: 0px;
         padding: 0px;
         font-family: var(--font_principal);
+        font-size: 1em;
     }
     body{
         background-image:url(../image/background_principal.jpg) ;
@@ -31,7 +32,7 @@
 @media screen and (max-width:768px){
     
     .header_principal{
-        width: 100vw;
+        width: 80vw;
         height: 30vh;
         text-align: center;  
     }
@@ -46,18 +47,18 @@
     }
     .header_text>h1{
         position: relative;
-        top: 50px;
-        font-size: 3em;
-        font-family: var(--font_header);
-
+        top: 0px;
+        left: 30px;
+        font-size: 2.5em;
+        font-family: var(--font_text);
         color: var(--cor02);
        
     }
     .section{
         position: relative;/*retirar se for colocar o logo da tecumseh*/
         top: -50px;
-        width:60vw;
-        height: 65vh;
+        width:80vw;
+        height: 100vh;
         margin: auto;
         border: 2px solid var(--cor02);
         background-color: white;
@@ -68,40 +69,25 @@
         text-align: center;
         
     }
-    .section_text-nominal{
-        margin: 20px;
-        font-size: 1.3em;
-    }
     .section_text-nominal>p{
         font-family: var(--font_text);
         color: var(--cor02);
     }
     .section_text-nominal>p>input[type=number]{
-        width: 150px; 
-        font-family: var(--font_header);
-        font-size: 1.1em;
+        width: 200px; 
         border-radius: 4px; 
     } 
-    .section_text-real{
-        padding: 30px;
-        font-size: 1.2em;
-    }   
     .section_text-real>p{
-        font-family: var(--font_text);
         color: var(--cor02);
     }
     .section_text-real>p>input[type=number]{
-        width: 150px; 
-        font-family: var(--font_header);
-        font-size: 1.1em;
+        width: 200px;
         border-radius: 4px; 
     } 
    
     #calcular>input[type=button]{
-        width: 200px; 
         color: var(--cor02);
         font-family: var(--font_header);
-        font-size: 1.3em;
         border-radius: 4px;   
     }  
     #calcular>input[type=button]:hover{
@@ -111,11 +97,17 @@
     .section_resposta{
         font-family: var(--font_header);
         color: var(--cor02);
+        font-size: 1.5em;
         margin-top: 10px ;
+        padding-top: 10px;
     }
     footer{
+        position: relative;
+        top: -30px;
+        left: 50px;
         text-align: center;
-        margin-top:10px ;
+        color: var(--cor02);
+ 
     }   
 
     }
