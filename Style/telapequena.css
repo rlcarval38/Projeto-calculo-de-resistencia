@@ -23,14 +23,15 @@
         font-family: var(--font_principal);
         font-size: 1em;
     }
-    body{
+   
+
+@media screen and (max-width:768px){
+     body{
+        height: 768px;
         background-image:url(../image/background_principal.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
     }
-
-@media screen and (max-width:768px){
-    
     .header_principal{
         width: 80vw;
         height: 30vh;
@@ -42,14 +43,14 @@
         top: 30px;
         padding: 5px;
     }*/
-    .header_img-logo{
+    /*.header_img-logo{
         width: 200px;  
-    }
+    }*/
     .header_text>h1{
         position: relative;
         top: 0px;
         left: 30px;
-        font-size: 2.5em;
+        font-size: 2em;
         font-family: var(--font_text);
         color: var(--cor02);
        
@@ -57,8 +58,8 @@
     .section{
         position: relative;/*retirar se for colocar o logo da tecumseh*/
         top: -150px;
-        width:80vw;
-        height: 100vh;
+        width:300px;
+        height: 550px;
         margin: auto;
         border: 2px solid var(--cor02);
         background-color: white;
@@ -103,8 +104,8 @@
     }
     footer{
         position: relative;
-        top: -30px;
-        left: 50px;
+        top: -150px;
+       
         text-align: center;
         color: var(--cor02);
  

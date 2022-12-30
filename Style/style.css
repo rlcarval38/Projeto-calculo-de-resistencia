@@ -99,7 +99,7 @@
    
     #calcular>input[type=button]{
         width: 200px; 
-        color: var(--cor02);
+        color: var(--cor03);
         font-family: var(--font_header);
         font-size: 1.3em;
         border-radius: 4px;   
@@ -114,8 +114,11 @@
         margin-top: 10px ;
     }
     footer{
+        position: relative;
+        top: -50px;
         text-align: center;
         margin-top:10px ;
+        color: var(--cor02);
     }   
 
     
